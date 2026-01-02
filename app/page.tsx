@@ -39,6 +39,28 @@ export default function Home() {
           </p>
         </section>
 
+        <section className="mb-12">
+          <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-xl p-8 text-white shadow-lg relative overflow-hidden">
+            <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+              <div>
+                <h3 className="text-2xl font-bold mb-2">Preparing for Technical Exams?</h3>
+                <p className="text-blue-100 max-w-xl">
+                  Access our comprehensive question bank for Microsoft Fabric (DP-700), Python, and SQL.
+                  Master real-world scenarios and boost your technical interview skills.
+                </p>
+              </div>
+              <a
+                href="/exam-prep"
+                className="bg-white text-blue-700 hover:bg-blue-50 font-semibold py-3 px-6 rounded-lg transition-colors shadow-sm whitespace-nowrap"
+              >
+                Start Practice Exam
+              </a>
+            </div>
+            {/* Decorative circle */}
+            <div className="absolute -right-10 -bottom-20 w-64 h-64 bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
+          </div>
+        </section>
+
         <div className="space-y-4">
           {semesters.map((semester) => (
             <SemesterList

@@ -6,7 +6,7 @@ import {
     DialogTitle,
 } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Course } from "@/app/data/courses"
+import { Course } from "@/app/data/courses";
 import { courseGuidelines } from "@/app/data/guidelines";
 import { CheckCircle2, Book, Lightbulb, AlertTriangle } from "lucide-react";
 
