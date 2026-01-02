@@ -4,8 +4,6 @@ import { useState } from "react";
 import { semesters, Course } from "@/app/data/courses";
 import { SemesterList } from "@/components/semester-list";
 import { GuidelineDialog } from "@/components/guideline-dialog";
-import { ThemeToggle } from "@/components/theme-toggle"; // Assuming this exists or I might mock it, but better safe to omit or create if needed. Actually user didn't ask for it but "dark mode" was mentioned in "Design Aesthetics". I'll skip it for now to avoid errors if component missing, or check if I need to make it.
-// Wait, I don't know if ThemeToggle exists. I'll omit it for now and just use standard layout.
 
 export default function Home() {
   const [selectedCourse, setSelectedCourse] = useState<Course | null>(null);
